@@ -20,15 +20,13 @@
   };
   window.VG_COMPANY = COMPANY;
 
-  // ---- Brand logo (original mark, extracted as transparent PNG) -
-  var LOGO_MARK =
-    '<img class="logo__mark" src="assets/img/logo-mark.png" alt="" aria-hidden="true" width="179" height="400">';
-
+  // ---- Brand logo (original full lockup, transparent PNG) -------
+  // Two variants: dark text for light backgrounds, white text for dark.
   function logo(extraClass) {
     return '<a href="index.html" class="logo ' + (extraClass || "") + '" aria-label="VG Group — на главную">' +
-      LOGO_MARK +
-      '<span class="logo__txt"><span class="logo__name">VG GROUP</span>' +
-      '<span class="logo__tag">Пространство будущего</span></span></a>';
+      '<img class="logo__img logo__img--color" src="assets/img/logo-full.png" alt="VG GROUP — пространство будущего" width="672" height="584">' +
+      '<img class="logo__img logo__img--white" src="assets/img/logo-full-white.png" alt="" aria-hidden="true" width="672" height="584">' +
+      '</a>';
   }
 
   var caret = '<svg class="nav__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';

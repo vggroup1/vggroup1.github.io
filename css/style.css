@@ -132,11 +132,16 @@ p { color: var(--ink-2); }
   display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 /* Logo */
-.logo { display: inline-flex; align-items: center; gap: 12px; }
-.logo__mark { width: auto; height: 44px; flex: none; display: block; }
-.logo__txt { display: flex; flex-direction: column; line-height: 1; }
-.logo__name { font-family: var(--font-head); font-weight: 800; font-size: 1.2rem; letter-spacing: .02em; color: var(--ink); }
-.logo__tag { font-size: .56rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.logo { display: inline-flex; align-items: center; }
+.logo__img { width: auto; height: 56px; flex: none; display: block; }
+.logo__img--white { display: none; }
+/* on dark backgrounds (transparent header over hero) show white-text variant */
+.header:not(.is-solid) .logo__img--color { display: none; }
+.header:not(.is-solid) .logo__img--white { display: block; }
+/* footer is dark */
+.footer .logo__img--color { display: none; }
+.footer .logo__img--white { display: block; }
+.footer .logo__img { height: 64px; }
 
 /* Nav */
 .nav { display: flex; align-items: center; gap: 4px; }
