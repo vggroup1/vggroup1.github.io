@@ -20,17 +20,9 @@
   };
   window.VG_COMPANY = COMPANY;
 
-  // ---- Brand logo (inline SVG mark) ----------------------------
+  // ---- Brand logo (original mark, extracted as transparent PNG) -
   var LOGO_MARK =
-    '<svg class="logo__mark" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-      '<defs><linearGradient id="vgGrad" x1="0" y1="0" x2="1" y2="1">' +
-        '<stop offset="0" stop-color="#e0334f"/><stop offset="1" stop-color="#f1657c"/>' +
-      '</linearGradient></defs>' +
-      '<path d="M30 0 L48 10 L48 30 L30 40 Z" fill="url(#vgGrad)"/>' +
-      '<path d="M30 0 L12 10 L12 46 L30 56 Z" fill="#e0334f"/>' +
-      '<path d="M48 30 L48 50 L30 60 L30 40 Z" fill="#c9ccd2"/>' +
-      '<path d="M30 40 L30 74 L48 64 L48 50 Z" fill="#aeb2ba"/>' +
-    '</svg>';
+    '<img class="logo__mark" src="assets/img/logo-mark.png" alt="" aria-hidden="true" width="179" height="400">';
 
   function logo(extraClass) {
     return '<a href="index.html" class="logo ' + (extraClass || "") + '" aria-label="VG Group — на главную">' +
