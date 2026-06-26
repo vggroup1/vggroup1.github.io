@@ -235,10 +235,9 @@ body.menu-open .mobile-menu { transform: translateX(0); }
 .hero__bg img { width: 100%; height: 100%; object-fit: cover; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1;
   background: linear-gradient(100deg, rgba(12,13,17,.86) 0%, rgba(12,13,17,.55) 48%, rgba(12,13,17,.18) 100%); }
-.hero .container { max-width: 1560px; }
+.hero .container { max-width: 1820px; }
 .hero__inner { padding: 60px 0; max-width: 780px; }
 .hero__stats { gap: 32px; }
-@media (min-width: 1400px) { .hero__inner { margin-left: -10px; } }
 .hero h1 { color: #fff; margin: 18px 0 22px; }
 .hero h1 .accent { background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero .lead { color: rgba(255,255,255,.85); max-width: 560px; }
