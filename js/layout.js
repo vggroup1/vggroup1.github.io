@@ -180,7 +180,7 @@
     return '<footer class="footer"><div class="container">' +
       '<div class="footer__grid">' +
         '<div class="footer__brand">' + logo() +
-          '<p class="footer__about">Строительная компания полного цикла: создаём современные внутренние пространства — стеклянные и профильные перегородки, двери, ограждения и изделия из стекла. От разработки и проектирования до монтажа и гарантийного сервиса.</p>' +
+          '<p class="footer__about">Создаём современные внутренние пространства — стеклянные и профильные перегородки, двери, ограждения и изделия из стекла. От разработки и проектирования до монтажа и гарантийного сервиса.</p>' +
           '<div class="footer__social">' +
             '<a href="' + COMPANY.telegram + '" target="_blank" rel="noopener" aria-label="Telegram">' + ICON.telegram + '</a>' +
             '<a href="' + COMPANY.max + '" target="_blank" rel="noopener" aria-label="MAX">' + ICON.chat + '</a>' +

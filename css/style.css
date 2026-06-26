@@ -4,22 +4,23 @@
    =========================================================== */
 
 :root {
-  /* Brand */
-  --accent:        #e0334f;   /* crimson-pink (logo) */
-  --accent-2:      #f1657c;   /* lighter pink */
-  --accent-soft:   #fdeef0;
-  --accent-grad:   linear-gradient(135deg, #e0334f 0%, #f1657c 100%);
+  /* Brand — розовая фуксия из логотипа */
+  --accent:        #e63965;   /* fuchsia (logo) */
+  --accent-2:      #ef82a0;   /* lighter pink (logo) */
+  --accent-soft:   #fdeef2;
+  --accent-grad:   linear-gradient(135deg, #e63965 0%, #ef82a0 100%);
 
-  /* Neutrals */
-  --ink:           #16181d;   /* near-black text */
-  --ink-2:         #3a3d44;
+  /* Neutrals — светло-серый из логотипа + серый по градиенту */
+  --ink:           #1c1f26;   /* graphite text */
+  --ink-2:         #444853;
   --muted:         #7c8088;   /* secondary text */
-  --line:          #e7e8ec;
-  --line-2:        #eceef1;
+  --line:          #e9eaee;
+  --line-2:        #eff0f3;
   --bg:            #ffffff;
-  --bg-soft:       #f6f7f9;
-  --bg-dark:       #14161b;   /* footer / dark sections */
-  --bg-dark-2:     #1c1f26;
+  --bg-soft:       #f5f6f8;   /* light gray (logo) */
+  --bg-dark:       #23262d;   /* footer / dark sections (graphite) */
+  --bg-dark-2:     #2c303a;
+  --grad-gray:     linear-gradient(160deg, #3c4049 0%, #1b1d23 100%);  /* серый: светлый → тёмный */
 
   /* Typography */
   --font-head: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -69,7 +70,7 @@ p { color: var(--ink-2); }
 .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: 24px; }
 .section { padding: clamp(64px, 9vw, 130px) 0; }
 .section--soft { background: var(--bg-soft); }
-.section--dark { background: var(--bg-dark); color: #fff; }
+.section--dark { background: var(--grad-gray); color: #fff; }
 .section--tight { padding: clamp(48px, 6vw, 80px) 0; }
 .center { text-align: center; }
 .mx-auto { margin-inline: auto; }
@@ -98,8 +99,8 @@ p { color: var(--ink-2); }
   white-space: nowrap; cursor: pointer;
 }
 .btn svg { width: 18px; height: 18px; }
-.btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 10px 26px rgba(224,51,79,.32); }
-.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(224,51,79,.42); }
+.btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 10px 26px rgba(230,57,101,.30); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(230,57,101,.40); }
 .btn--dark { background: var(--ink); color: #fff; }
 .btn--dark:hover { transform: translateY(-2px); background: #000; }
 .btn--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
@@ -254,8 +255,8 @@ body.menu-open .mobile-menu { transform: translateX(0); }
 .page-hero__bg { position: absolute; inset: 0; z-index: -2; }
 .page-hero__bg img { width: 100%; height: 100%; object-fit: cover; }
 .page-hero::after { content: ""; position: absolute; inset: 0; z-index: -1;
-  background: linear-gradient(180deg, rgba(12,13,17,.78), rgba(12,13,17,.62)); }
-.page-hero.no-img { background: var(--bg-dark); color: #fff; }
+  background: linear-gradient(165deg, rgba(40,43,51,.72) 0%, rgba(22,24,29,.78) 100%); }
+.page-hero.no-img { background: var(--grad-gray); color: #fff; }
 .page-hero.no-img::after { display: none; }
 .page-hero h1 { color: #fff; margin-top: 14px; max-width: 800px; }
 .page-hero .lead { color: rgba(255,255,255,.82); max-width: 640px; margin-top: 18px; }
@@ -478,7 +479,7 @@ body.menu-open .mobile-menu { transform: translateX(0); }
 /* ===========================================================
    FOOTER
    =========================================================== */
-.footer { background: var(--bg-dark); color: rgba(255,255,255,.7); padding: 72px 0 32px; }
+.footer { background: var(--grad-gray); color: rgba(255,255,255,.7); padding: 72px 0 32px; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 50px; border-bottom: 1px solid rgba(255,255,255,.1); }
 .footer .logo__name { color: #fff; }
 .footer .logo__tag { color: rgba(255,255,255,.5); }
