@@ -4,11 +4,11 @@
    =========================================================== */
 
 :root {
-  /* Brand — розовая фуксия из логотипа */
-  --accent:        #e63965;   /* fuchsia (logo) */
-  --accent-2:      #ef82a0;   /* lighter pink (logo) */
-  --accent-soft:   #fdeef2;
-  --accent-grad:   linear-gradient(135deg, #e63965 0%, #ef82a0 100%);
+  /* Brand — яркая насыщенная фуксия */
+  --accent:        #fa1466;   /* bright saturated fuchsia */
+  --accent-2:      #ff5f93;   /* lighter vivid pink */
+  --accent-soft:   #ffe7ef;
+  --accent-grad:   linear-gradient(135deg, #fa1466 0%, #ff5f93 100%);
 
   /* Neutrals — светло-серый из логотипа + серый по градиенту */
   --ink:           #1c1f26;   /* graphite text */
@@ -99,8 +99,8 @@ p { color: var(--ink-2); }
   white-space: nowrap; cursor: pointer;
 }
 .btn svg { width: 18px; height: 18px; }
-.btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 10px 26px rgba(230,57,101,.30); }
-.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(230,57,101,.40); }
+.btn--primary { background: var(--accent-grad); color: #fff; box-shadow: 0 10px 26px rgba(250,20,102,.32); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(250,20,102,.44); }
 .btn--dark { background: var(--ink); color: #fff; }
 .btn--dark:hover { transform: translateY(-2px); background: #000; }
 .btn--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
